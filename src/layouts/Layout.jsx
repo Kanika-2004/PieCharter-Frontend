@@ -21,21 +21,21 @@ const Layout = ({children}) => {
     }
 
 
-    async function fetchCartDetails() {
-        const res = await dispatch(getcartdetails());
-        console.log("cart details", res)
-        if(res?.payload?.isUnauthorized) {
-            console.log("unauthorized");
-            dispatch(logout());
-        }
-    }
+    // async function fetchCartDetails() {
+    //     const res = await dispatch(getcartdetails());
+    //     console.log("cart details", res)
+    //     if(res?.payload?.isUnauthorized) {
+    //         console.log("unauthorized");
+    //         dispatch(logout());
+    //     }
+    // }
 
-    useEffect(() => {
-        console.log(typeof(isLoggedIn))
-        if(isLoggedIn) {
-            fetchCartDetails();
-        }
-    }, []);
+    // useEffect(() => {
+    //     console.log(typeof(isLoggedIn))
+    //     if(isLoggedIn) {
+    //         fetchCartDetails();
+    //     }
+    // }, []);
 
   return (
     <div>

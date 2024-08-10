@@ -44,7 +44,7 @@ export const login =createAsyncThunk('auth/logindata',async (data)=>{
         console.log(error)
     }
 })
-export const logout =createAsyncThunk('/auth/logout',async ()=>{
+export const logout =createAsyncThunk('auth/logout',async ()=>{
     console.log("incoming data");
     try {
         
