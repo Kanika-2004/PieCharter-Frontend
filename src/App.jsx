@@ -21,11 +21,11 @@ function App() {
         <Route path='/auth/login' element={<Login/>} />
         <Route path='/admin/addproduct' element={<AddProduct/>} />
         <Route path='/product/:productid' element={<ProductDetails/>} />
-      <Route element={<RequireAuth/>}>
+     
         <Route path='/cart' element={<CartDetails/>} />
         <Route path='/order' element={<Order />} />
         <Route path='/order/success' element={<OrderSuccess />} />
-        </Route>  
+     
         <Route path='*' element={<NotFound/>} />
       </Routes>
     </>
