@@ -5,7 +5,7 @@ import { act } from "react";
 const initialState= {
     isLoggedIn: localStorage.getItem('isLoggedIn')=='true' || false,
     role: localStorage.getItem('role') || '', 
-    data: JSON.parse(localStorage.getItem('data')) || {}
+    // data: JSON.parse(localStorage.getItem('data')) || {}
 };
 export const createAccount =createAsyncThunk('auth/createaccount',async (data)=>{
     console.log("incoming data",data);
